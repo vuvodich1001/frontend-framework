@@ -1,3 +1,7 @@
+a {
+  text-decoration: none !important;
+}
+
 img.card-img-top {
   height: 300px;
 }
@@ -5,4 +9,10 @@ img.card-img-top {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  font-size: 18px;
 }

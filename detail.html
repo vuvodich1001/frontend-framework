@@ -28,7 +28,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light h5">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <h3>Store</h3>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -44,14 +44,14 @@
                                     Account
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">My Account</a>
-                                    <a class="dropdown-item" href="#">Purchase Orders</a>
-                                    <a class="dropdown-item" href="#">Review</a>
+                                    <a class="dropdown-item" href="myacount.html">My Account</a>
+                                    <a class="dropdown-item" href="purchase-order.html">Purchase Orders</a>
+                                    <a class="dropdown-item" href="review.html">Review</a>
                                     <a class="dropdown-item" href="#">Logout</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="cart.html">
                                     <button class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i>
                                         Cart <span class="p-1 rounded bg-dark text-light">0</span></button>
                                 </a>
@@ -64,16 +64,16 @@
                 <nav class="d-flex align-items-center h5 rounded">
                     <ul class="d-flex align-items-center mr-auto h-100">
                         <li class="nav-item active">
-                            <a class="pr-3 text-secondary" href="#">Home</span></a>
+                            <a class="pr-3 text-secondary" href="index.html">Home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="pr-3 text-secondary" href="/product.html">All Products</a>
+                            <a class="pr-3 text-secondary" href="product.html">All Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="pr-3 text-secondary" href="/product.html">Algorithm</a>
+                            <a class="pr-3 text-secondary" href="product.html">Algorithm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="pr-3 text-secondary" href="/product.html">Programing language</a>
+                            <a class="pr-3 text-secondary" href="product.html">Programing language</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -90,8 +90,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Category</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Algorithm</li>
+                                <li class="breadcrumb-item active" aria-current="page">Detail</li>
                             </ol>
                         </nav>
                     </div>
@@ -136,27 +135,31 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <h5>Clean code</h5>
-                                <div class="d-flex">
-                                    <h5 class="text-danger mr-3">250.000đ</h5>
-                                    <h5 style="text-decoration: line-through;">300.000đ</h5>
-                                </div>
-                                <div class="quantity">
-                                    <button class="btn btn-outline-secondary"><i class="fas fa-minus"></i></button>
-                                    <span class="h5 d-inline-block p-2">1</span>
-                                    <button class="btn btn-outline-secondary"><i class="fas fa-plus"></i></button>
-                                </div>
+                                <div class="mt-2">
+                                    <h5>Clean code</h5>
+                                    <div class="d-flex">
+                                        <h5 class="text-danger mr-3">250.000đ</h5>
+                                        <h5 style="text-decoration: line-through;">300.000đ</h5>
+                                    </div>
+                                    <div class="quantity">
+                                        <button class="btn btn-sm btn-outline-secondary"><i
+                                                class="fas fa-minus"></i></button>
+                                        <span class="h5 d-inline-block p-2">1</span>
+                                        <button class="btn btn-sm btn-outline-secondary"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
 
-                                <div class="my-3">
-                                    <button class="btn btn-info"><i class="fas fa-shopping-cart"></i> Add to
-                                        Cart</button>
+                                    <div class="my-3">
+                                        <button class="btn btn-info"><i class="fas fa-shopping-cart"></i> Add to
+                                            Cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-lg-12">
                                 <h4>Chi tiết sản phẩm</h4>
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <td>Tác giả</td>
                                         <td>David degea</td>
@@ -179,11 +182,113 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-lg-12">
-                                <h4>Sản phẩm liên quan</h4>
+                                <div class="row review mt-3">
+                                    <div class="col-lg-4">
+                                        <div class="name-group d-flex align-items-center">
+                                            <div class="photo bg-dark mr-3 p-2 text-light" style="border-radius: 50%;">
+                                                NA
+                                            </div>
+                                            <p class="m-0">Nguyen Van A</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="comment-group">
+                                            <div class="comment-rating text-warning">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="comment-body">
+                                                Sản phẩm này rất tốt
+                                            </div>
+                                            <div class="comment-date">
+                                                01/01/2002
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row review mt-3">
+                                    <div class="col-lg-4">
+                                        <div class="name-group d-flex align-items-center">
+                                            <div class="photo bg-dark mr-3 p-2 text-light" style="border-radius: 50%;">
+                                                NB
+                                            </div>
+                                            <p class="m-0">Nguyen Van B</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="comment-group">
+                                            <div class="comment-rating text-warning">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="comment-body">
+                                                Sản phẩm không đúng với mô tả
+                                            </div>
+                                            <div class="comment-date">
+                                                01/03/2005
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-3">
-
+                            <div class="col-lg-12">
+                                <h4 class="m-0">Sản phẩm liên quan</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-secondary">Clean Code</h5>
+                                            <p class="card-text">
+                                                <span class="text-danger mr-2">200.000đ</span>
+                                                <span class="text-secondary"
+                                                    style="text-decoration: line-through;">250.000đ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./images/python.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-secondary">Clean Code</h5>
+                                            <p class="card-text">
+                                                <span class="text-danger mr-2">200.000đ</span>
+                                                <span class="text-secondary"
+                                                    style="text-decoration: line-through;">250.000đ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./images/java.jpeg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-secondary">Clean Code</h5>
+                                            <p class="card-text">
+                                                <span class="text-danger mr-2">200.000đ</span>
+                                                <span class="text-secondary"
+                                                    style="text-decoration: line-through;">250.000đ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,7 +303,7 @@
                                         class="mr-1 fas fa-home"></i>
                                     StoreUIT</a></li>
                             <li><a class="text-secondary d-inline-block py-1 text-light" href=""><i
-                                        class="mr-1 far fa-envelope"></i> StoreUIT@gmail.com</a></li>
+                                        class="mr-1 fas fa-envelope"></i> StoreUIT@gmail.com</a></li>
                             <li><a class="text-secondary d-inline-block py-1 text-light" href=""><i
                                         class="mr-1 fas fa-phone-alt"></i>
                                     0912345678</a></li>
