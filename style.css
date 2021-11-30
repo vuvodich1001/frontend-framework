@@ -16,3 +16,9 @@ ul {
   vertical-align: middle;
   font-size: 18px;
 }
+
+/* slider */
+.slick-next::before,
+.slick-prev::before {
+  color: #777;
+}

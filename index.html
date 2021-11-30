@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Book</title>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -17,9 +18,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider theme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- customer css -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -61,8 +71,8 @@
                 </div>
             </nav>
             <div class="container">
-                <nav class="d-flex align-items-center rounded">
-                    <ul class="d-flex align-items-center mr-auto h-100 h5">
+                <nav class="d-flex align-items-center h5 rounded">
+                    <ul class="d-flex align-items-center mr-auto h-100">
                         <li class="nav-item active">
                             <a class="pr-3 text-secondary" href="index.html">Home</span></a>
                         </li>
@@ -84,6 +94,54 @@
             </div>
             <main>
                 <div class="container">
+                    <!-- slider -->
+                    <div class="row slider">
+                        <div class="col-lg-12">
+                            <divs class="row bg-primary rounded p-3 text-light">
+                                <div class="col-lg-6">
+                                    <h3>Đăng ký ngay</h3>
+                                    <p style="font-size: 19px;">Hàng ngàn voucher và phần thưởng hấp dẫn đang đợi bạn
+                                        phía trước</p>
+                                    <button class="btn btn-outline-warning">Đăng ký</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center display-1" style="opacity: 0.6;">
+                                        <i class="far fa-address-book"></i>
+                                    </div>
+                                </div>
+                            </divs>
+                        </div>
+                        <div class="col-lg-12">
+                            <divs class="row bg-warning rounded p-3 text-light">
+                                <div class="col-lg-6">
+                                    <h3>Nhận voucher</h3>
+                                    <p style="font-size: 19px;">Hàng ngàn voucher và phần thưởng hấp dẫn đang đợi bạn
+                                        phía trước</p>
+                                    <button class="btn btn-outline-primary">Nhận ngay</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center display-1" style="opacity: 0.6;">
+                                        <i class="fas fa-tags"></i>
+                                    </div>
+                                </div>
+                            </divs>
+                        </div>
+                        <div class="col-lg-12">
+                            <divs class="row bg-info rounded p-3 text-light">
+                                <div class="col-lg-6">
+                                    <h3>Chia sẻ ngay</h3>
+                                    <p style="font-size: 19px;">Chia sẻ để giới thiệu với bạn bè và cùng nhau nhận nhiều
+                                        phần thưởng hấp dẫn của shop nhé ♥ </p>
+                                    <button class="btn btn-outline-warning">Chia sẻ ngay</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center display-1" style="opacity: 0.6;">
+                                        <i class="far fa-share-square"></i>
+                                    </div>
+                                </div>
+                            </divs>
+                        </div>
+                    </div>
                     <!-- Sản phẩm nổi bật -->
                     <div class="row">
                         <div class="col-md-12">
@@ -98,7 +156,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -113,7 +171,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -128,7 +186,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/python.jpg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Python</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Python</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -143,7 +201,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/java.jpeg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Design Pattern Java</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Design Pattern Java</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -158,7 +216,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -191,7 +249,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/java.jpeg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -206,7 +264,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/java.jpeg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -221,7 +279,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/java.jpeg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -236,7 +294,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -251,7 +309,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title text-secondary">Clean Code</h5>
+                                        <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                         <p class="card-text">
                                             <span class="text-danger mr-2">200.000đ</span>
                                             <span class="text-secondary"
@@ -320,6 +378,27 @@
                 </div>
             </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //slider
+        if ($('.slider')) {
+            $('.slider').slick({
+                infinite: true,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        }
+    </script>
+</body>
+
+</html>
+
 </body>
 
 </html>
