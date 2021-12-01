@@ -51,7 +51,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link p-lg-0" href="cart.html">
+                                <a class="nav-link" href="cart.html">
                                     <button class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i>
                                         Cart <span class="p-1 rounded bg-dark text-light">0</span></button>
                                 </a>
@@ -64,9 +64,9 @@
                 <nav class="d-flex align-items-center h5 rounded">
                     <ul class="d-flex align-items-center mr-auto h-100">
                         <li class="nav-item">
-                            <a class="px-2 text-secondary" href="index.html">Home</span></a>
+                            <a class="px-2 text-secondary" href="detail.html">Home</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="px-2 text-secondary" href="product.html">All Products</a>
                         </li>
                     </ul>
@@ -83,8 +83,9 @@
                     <div class="col-lg-12">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="product.html">All Products</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Populars Products</li>
                             </ol>
                         </nav>
                     </div>
@@ -94,156 +95,42 @@
                         <h4><i class="fas fa-list-ul"></i> Danh mục</h4>
                         <ul>
                             <li><a class="d-block text-secondary py-3 border-bottom" href=""
-                                    style="text-decoration: none;">All Products</a></li>
+                                    style="text-decoration: none; font-size: 1.1rem;">All Products</a></li>
                             <li><a class="d-block text-secondary py-3 border-bottom" href=""
-                                    style="text-decoration: none;">Popular Products</a></li>
+                                    style="text-decoration: none; font-size: 1.1rem;">Popular Products</a></li>
                             <li><a class="d-block text-secondary py-3 border-bottom" href=""
-                                    style="text-decoration: none;">Data structure and Algorithm</a></li>
+                                    style="text-decoration: none; font-size: 1.1rem;">Data structure and Algorithm</a>
+                            </li>
                             <li><a class="d-block text-secondary py-3 border-bottom" href=""
-                                    style="text-decoration: none;">Programming language</a></li>
+                                    style="text-decoration: none; font-size: 1.1rem;">Programming language</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <img src="./images/clean-code.jpg" alt="image" class="w-100">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-4"><img src="./images/clean-code.jpg" alt="image"
-                                                    class="w-100"
-                                                    style="height: 100px; object-fit: cover; opacity: 0.7;">
-                                            </div>
-                                            <div class="col-lg-4"><img src="./images/clean-code.jpg" alt="image"
-                                                    class="w-100"
-                                                    style="height: 100px; object-fit: cover; opacity: 0.7;">
-                                            </div>
-                                            <div class="col-lg-4"><img src="./images/clean-code.jpg" alt="image"
-                                                    class="w-100"
-                                                    style="height: 100px; object-fit: cover; opacity: 0.7;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mt-2">
-                                    <h5>Clean code</h5>
+                            <!-- sort -->
+                            <div class="col-lg-12">
+                                <div class="detail-title d-flex align-items-center justify-content-between">
+                                    <h4 class="m-0">Popular Products</h4>
                                     <div class="d-flex">
-                                        <h5 class="text-danger mr-3">250.000đ</h5>
-                                        <h5 style="text-decoration: line-through;">300.000đ</h5>
-                                    </div>
-                                    <div class="quantity">
-                                        <button class="btn btn-sm btn-outline-secondary"><i
-                                                class="fas fa-minus"></i></button>
-                                        <span class="h5 d-inline-block p-2">1</span>
-                                        <button class="btn btn-sm btn-outline-secondary"><i
-                                                class="fas fa-plus"></i></button>
-                                    </div>
-
-                                    <div class="my-3">
-                                        <button class="btn btn-info"><i class="fas fa-shopping-cart"></i> Add to
-                                            Cart</button>
+                                        <p class="my-0 mr-2">Sort by:</p>
+                                        <select class="border">
+                                            <option selected>Mới nhất</option>
+                                            <option value="1">Tăng dần</option>
+                                            <option value="2">Giảm dần</option>
+                                            <option value="3">Bán chạy nhất</option>
+                                            <option value="3">Từ a - z</option>
+                                            <option value="3">Từ z - a</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-12">
-                                <h4>Chi tiết sản phẩm</h4>
-                                <table class="table">
-                                    <tr>
-                                        <td>Tác giả</td>
-                                        <td>David degea</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ngày xuất bản</td>
-                                        <td>01/01/2002</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nhà xuất bản</td>
-                                        <td>Fahasa</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-12">
-                                <h4>Đánh giá sản phẩm</h4>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-12">
-                                <div class="row review mt-3">
-                                    <div class="col-lg-4">
-                                        <div class="name-group d-flex align-items-center">
-                                            <div class="photo bg-dark mr-3 p-2 text-light" style="border-radius: 50%;">
-                                                NA
-                                            </div>
-                                            <p class="m-0">Nguyen Van A</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="comment-group">
-                                            <div class="comment-rating text-warning">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                            <div class="comment-body">
-                                                Sản phẩm này rất tốt
-                                            </div>
-                                            <div class="comment-date">
-                                                01/01/2002
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row review mt-3">
-                                    <div class="col-lg-4">
-                                        <div class="name-group d-flex align-items-center">
-                                            <div class="photo bg-dark mr-3 p-2 text-light" style="border-radius: 50%;">
-                                                NB
-                                            </div>
-                                            <p class="m-0">Nguyen Van B</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="comment-group">
-                                            <div class="comment-rating text-warning">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <div class="comment-body">
-                                                Sản phẩm không đúng với mô tả
-                                            </div>
-                                            <div class="comment-date">
-                                                01/03/2005
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-12">
-                                <h4 class="m-0">Sản phẩm liên quan</h4>
-                            </div>
-                        </div>
-                        <div class="row">
+                            <!-- product list -->
                             <div class="col-lg-4">
                                 <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
                                     <div class="card">
                                         <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                         <div class="card-body text-center">
-                                            <h5 class="card-title text-secondary">Clean Code</h5>
+                                            <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                             <p class="card-text">
                                                 <span class="text-danger mr-2">200.000đ</span>
                                                 <span class="text-secondary"
@@ -256,9 +143,9 @@
                             <div class="col-lg-4">
                                 <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
                                     <div class="card">
-                                        <img class="card-img-top" src="./images/python.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                         <div class="card-body text-center">
-                                            <h5 class="card-title text-secondary">Clean Code</h5>
+                                            <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                             <p class="card-text">
                                                 <span class="text-danger mr-2">200.000đ</span>
                                                 <span class="text-secondary"
@@ -271,9 +158,24 @@
                             <div class="col-lg-4">
                                 <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
                                     <div class="card">
-                                        <img class="card-img-top" src="./images/java.jpeg" alt="Card image cap">
+                                        <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
                                         <div class="card-body text-center">
-                                            <h5 class="card-title text-secondary">Clean Code</h5>
+                                            <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
+                                            <p class="card-text">
+                                                <span class="text-danger mr-2">200.000đ</span>
+                                                <span class="text-secondary"
+                                                    style="text-decoration: line-through;">250.000đ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="detail.html" class="item d-block mt-4" style="text-decoration: none;">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./images/clean-code.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-truncate text-secondary">Clean Code</h5>
                                             <p class="card-text">
                                                 <span class="text-danger mr-2">200.000đ</span>
                                                 <span class="text-secondary"
@@ -286,6 +188,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mt-5 pagination d-flex justify-content-end">
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1"><i
+                                                class="fas fa-angle-left"></i></a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="fas fa-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="bg-dark pt-2 mt-4">
             <div class="container">
@@ -297,7 +222,7 @@
                                         class="mr-1 fas fa-home"></i>
                                     StoreUIT</a></li>
                             <li><a class="text-secondary d-inline-block py-1 text-light" href=""><i
-                                        class="mr-1 fas fa-envelope"></i> StoreUIT@gmail.com</a></li>
+                                        class="mr-1 far fa-envelope"></i> StoreUIT@gmail.com</a></li>
                             <li><a class="text-secondary d-inline-block py-1 text-light" href=""><i
                                         class="mr-1 fas fa-phone-alt"></i>
                                     0912345678</a></li>
@@ -316,7 +241,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4">
                         <h5 class="text-light">Đăng kí nhận tin</h5>
-                        <form class="my-3">
+                        <form class="my-2">
                             <input class="form-control" type="email" placeholder="Nhập email của bạn" aria-label="">
                             <button class="btn btn-outline-success mt-2" type="submit">Submit</button>
                         </form>

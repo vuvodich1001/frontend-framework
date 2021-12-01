@@ -1,3 +1,11 @@
+:root {
+  --main-color: #f5f5fa;
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
 a {
   text-decoration: none !important;
 }
@@ -21,4 +29,9 @@ ul {
 .slick-next::before,
 .slick-prev::before {
   color: #777;
+}
+
+/* nav */
+.nav-item.active a {
+  border-bottom: 3px solid #ccc;
 }
