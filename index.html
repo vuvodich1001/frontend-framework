@@ -9,6 +9,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -93,10 +94,11 @@
                         <div class="col-lg-12">
                             <divs class="row bg-primary rounded p-3 text-light">
                                 <div class="col-lg-6">
-                                    <h3>Đăng ký ngay</h3>
+                                    <h3>Đăng nhập ngay</h3>
                                     <p style="font-size: 19px;">Hàng ngàn voucher và phần thưởng hấp dẫn đang đợi bạn
                                         phía trước</p>
-                                    <a href=""><button class="btn btn-outline-warning">Đăng ký</button></a>
+                                    <button class="btn btn-outline-warning" data-toggle="modal"
+                                        data-target="#signInModal">Đăng nhập</button>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="text-center display-1" style="opacity: 0.6;">
@@ -373,22 +375,122 @@
                 </div>
             </footer>
     </div>
+    <!-- Modal Signin-->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="max-width: 400px;">
+            <div class="modal-content">
+                <div class="modal-header border-white">
+                    <button type="button" class="close close-signin" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h3 class="text-center">Login</h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100" style="border-radius: 20px;">Login</button>
+                    </form>
+                </div>
+                <div class="modal-icon text-center border-bottom p-2">
+                    <p>Or use a social network</p>
+                    <div class="h3">
+                        <a class="mx-1 text-dark" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="mx-1 text-dark" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="mx-1 text-dark" href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="modal-signup mt-2 text-center">
+                    <p>Not a member yet? <a href="" class="btn-sign-up">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Signup-->
+    <button class="btn btn-outline-warning d-none btn-open-signup" data-toggle="modal"
+        data-target="#signUpModal"></button>
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="max-width: 400px;">
+            <div class="modal-content">
+                <div class="modal-header border-white">
+                    <button type="button" class="close close-signup" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h3 class="text-center">Register</h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="first-name" class="form-control" id="first-name" placeholder="First Name"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="last-name" class="form-control" id="last-name" placeholder="Last Name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="rpassword" class="form-control" id="rpassword"
+                                placeholder="Input password again" required>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100" style="border-radius: 20px;">Register</button>
+                    </form>
+                </div>
+                <div class="modal-icon text-center border-bottom p-2">
+                    <p>Or use a social network</p>
+                    <div class="h3">
+                        <a class="mx-1 text-dark" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="mx-1 text-dark" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="mx-1 text-dark" href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="modal-signup mt-2 text-center">
+                    <p>Have a account? <a href="">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        //slider
-        if ($('.slider')) {
-            $('.slider').slick({
-                infinite: true,
-                dots: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
+        $(document).ready(function () {
+            // btn-sign-up
+            $('.btn-sign-up').click(function (e) {
+                e.preventDefault();
+                $('.close-signin').click();
+                $('.btn-open-signup').click();
             });
-        }
+            //slider
+            if ($('.slider')) {
+                $('.slider').slick({
+                    infinite: true,
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            }
+        });
     </script>
 </body>
 
