@@ -22,7 +22,7 @@ ul {
 .table td,
 .table th {
   vertical-align: middle;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* slider */
@@ -34,4 +34,14 @@ ul {
 /* nav */
 .nav-item.active a {
   border-bottom: 3px solid #ccc;
+}
+/* sub-image */
+.sub-image {
+  cursor: pointer;
+  height: 100px;
+  object-fit: contain;
+}
+
+.sub-image-active {
+  border: 1px solid var(--primary);
 }
