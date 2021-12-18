@@ -2,6 +2,10 @@
   --main-color: #f5f5fa;
 }
 
+.app {
+  background-color: var(--main-color);
+}
+
 .text-pink {
   color: var(--pink);
 }
@@ -44,4 +48,42 @@ ul {
 
 .sub-image-active {
   border: 1px solid var(--primary);
+}
+
+/* main-title */
+.main-title {
+  position: relative;
+}
+.main-title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 80px;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--info);
+}
+
+.item {
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+/* slider */
+.slider-login {
+  background: linear-gradient(to right, rgb(40, 119, 250), rgb(103, 23, 205));
+}
+
+.slider-share {
+  background: linear-gradient(to right, rgb(0, 126, 254), rgb(6, 195, 254));
+}
+
+.slider-voucher {
+  background: linear-gradient(to right, rgb(254, 33, 94), rgb(255, 148, 2));
+}
+
+/* breadcrumb */
+.breadcrumb {
+  margin-top: 10px;
 }
