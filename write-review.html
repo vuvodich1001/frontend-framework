@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Book</title>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -17,8 +18,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -144,167 +146,57 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">All Products</li>
+                                <li class="breadcrumb-item"><a href="review.html">Review</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"> Write Review</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
-                        <h4><i class="fas fa-list-ul"></i> Danh mục</h4>
-                        <ul class="bg-light mt-3">
-                            <li><a class="d-block text-dark p-3 border-bottom" href="product-category.html"
-                                    style="text-decoration: none; font-size: 1.1rem;">All Products</a></li>
-                            <li><a class="d-block text-dark p-3 border-bottom" href="product-category.html"
-                                    style="text-decoration: none; font-size: 1.1rem;">Java and Spring</a></li>
-                            <li><a class="d-block text-dark p-3 border-bottom" href="product-category.html"
-                                    style="text-decoration: none; font-size: 1.1rem;">PHP and Laravel</a>
-                            </li>
-                            <li><a class="d-block text-dark p-3 border-bottom" href="product-category.html"
-                                    style="text-decoration: none; font-size: 1.1rem;">ReactJs and VueJs</a></li>
-                        </ul>
+                    <div class="col-lg-12">
+                        <h3 class="text-center">Đánh giá sản phẩm</h3>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="row">
-                            <!-- sort -->
-                            <div class="col-lg-12">
-                                <div class="detail-title d-flex align-items-center justify-content-between">
-                                    <h4 class="m-0">All Products</h4>
-                                    <div class="d-flex">
-                                        <p class="my-0 mr-2">Sort by:</p>
-                                        <select class="border">
-                                            <option selected>Mới nhất</option>
-                                            <option value="1">Tăng dần</option>
-                                            <option value="2">Giảm dần</option>
-                                            <option value="3">Bán chạy nhất</option>
-                                            <option value="3">Từ a - z</option>
-                                            <option value="3">Từ z - a</option>
-                                        </select>
+                    <div class="col-lg-6">
+                        <div class="item p-2 mt-4 d-flex justify-content-around align-items-center bg-light"
+                            style="font-size: 1.1rem;">
+                            <div class="d-flex align-items-center">
+                                <img src="./images/clean-code.jpg" alt="" class="rounded"
+                                    style="height: 110px; width: 110px; object-fit: cover;">
+                                <div class="ml-2">
+                                    <span class="d-inline-block ml-2">Clean code</span>
+                                    <div class="comment-rating text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
                                     </div>
                                 </div>
                             </div>
-                            <!-- product list -->
-                            <div class="col-lg-4">
-                                <a href="detail.html" class="item d-block mt-4">
-                                    <div class="card border-0">
-                                        <img class="card-img-top p-1" src="./images/clean-code.jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body text-center p-2">
-                                            <div class="comment-rating text-warning">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <h5 class="card-title text-truncate text-dark my-1 font-weight-normal"
-                                                style="font-size: 1.1rem;">
-                                                Clean Code With Javascript and Python</h5>
-                                            <p class="card-text d-flex align-items-center justify-content-center">
-                                                <span class="text-danger" style="font-size: 1.2rem">200.000 đ</span>
-                                                <span class="d-inline-block mx-2 h-100 text-secondary">|</span>
-                                                <span class="text-secondary"> Đã bán 0</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="detail.html" class="item d-block mt-4">
-                                    <div class="card border-0">
-                                        <img class="card-img-top p-1" src="./images/clean-code.jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body text-center p-2">
-                                            <div class="comment-rating text-warning">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <h5 class="card-title text-truncate text-dark my-1 font-weight-normal"
-                                                style="font-size: 1.1rem;">
-                                                Clean Code With Javascript and Python</h5>
-                                            <p class="card-text d-flex align-items-center justify-content-center">
-                                                <span class="text-danger" style="font-size: 1.2rem">200.000 đ</span>
-                                                <span class="d-inline-block mx-2 h-100 text-secondary">|</span>
-                                                <span class="text-secondary"> Đã bán 0</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="detail.html" class="item d-block mt-4">
-                                    <div class="card border-0">
-                                        <img class="card-img-top p-1" src="./images/python.jpg" alt="Card image cap">
-                                        <div class="card-body text-center p-2">
-                                            <div class="comment-rating text-warning">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <h5 class="card-title text-truncate text-dark my-1 font-weight-normal"
-                                                style="font-size: 1.1rem;">
-                                                Clean Code With Javascript and Python</h5>
-                                            <p class="card-text d-flex align-items-center justify-content-center">
-                                                <span class="text-danger" style="font-size: 1.2rem">200.000 đ</span>
-                                                <span class="d-inline-block mx-2 h-100 text-secondary">|</span>
-                                                <span class="text-secondary"> Đã bán 0</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="detail.html" class="item d-block mt-4">
-                                    <div class="card border-0">
-                                        <img class="card-img-top p-1" src="./images/java.jpeg" alt="Card image cap">
-                                        <div class="card-body text-center p-2">
-                                            <div class="comment-rating text-warning">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <h5 class="card-title text-truncate text-dark my-1 font-weight-normal"
-                                                style="font-size: 1.1rem;">
-                                                Clean Code With Javascript and Python</h5>
-                                            <p class="card-text d-flex align-items-center justify-content-center">
-                                                <span class="text-danger" style="font-size: 1.2rem">200.000 đ</span>
-                                                <span class="d-inline-block mx-2 h-100 text-secondary">|</span>
-                                                <span class="text-secondary"> Đã bán 0</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="alert alert-primary p-1">Đã nhận 5 đánh giá</div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-lg-12">
-                        <div class="mt-5 pagination d-flex justify-content-end">
-                            <nav aria-label="...">
-                                <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1"><i
-                                                class="fas fa-angle-left"></i></a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#"><i class="fas fa-angle-right"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <form action="" method="post">
+                            <div class="d-flex justify-content-center">
+                                <div class="rating-star">
+                                    <input id="star10" name="rating" type="radio" value="5">
+                                    <label for="star10"></label>
+                                    <input id="star8" name="rating" type="radio" value="4">
+                                    <label for="star8"></label>
+                                    <input id="star6" name="rating" type="radio" value="3">
+                                    <label for="star6"></label>
+                                    <input id="star4" name="rating" type="radio" value="2">
+                                    <label for="star4"></label>
+                                    <input id="star2" name="rating" type="radio" value="1">
+                                    <label for="star2"></label>
+                                </div>
+                            </div>
+                            <textarea name="comment" id="comment" cols="30" rows="15" class="w-100 p-2 border"
+                                placeholder="Viết đánh giá ở đây" onfocus="this.style.outline = 'none'"></textarea>
+                            <input type="file" name="review-image" id="review-image" class="mt-2">
+                            <button class="d-block btn btn-info mt-3 mx-auto">Gửi đánh giá</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -338,7 +230,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4">
                         <h5 class="text-light">Đăng kí nhận tin</h5>
-                        <form class="my-2">
+                        <form class="my-3">
                             <input class="form-control" type="email" placeholder="Nhập email của bạn" aria-label="">
                             <button class="btn btn-outline-success mt-2" type="submit">Submit</button>
                         </form>
@@ -356,6 +248,8 @@
                 </div>
             </div>
         </footer>
+
+
     </div>
 </body>
 
