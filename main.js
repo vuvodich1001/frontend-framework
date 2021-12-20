@@ -16,8 +16,21 @@ function changeImageOnClick() {
     }
 }
 
+function copyVoucher() {
+    let btnVouchers = document.querySelectorAll('.btn-voucher');
+    if (btnVouchers) {
+        btnVouchers.forEach(btnVoucher => {
+            btnVoucher.addEventListener('click', function (e) {
+                let code = btnVoucher.parentElement.querySelector('.code');
+                btnVoucher.textContent = 'Copied';
+                navigator.clipboard.writeText(code.innerText);
+            });
+        });
+    }
+}
 function start() {
     changeImageOnClick();
+    copyVoucher();
 }
 
 start();
